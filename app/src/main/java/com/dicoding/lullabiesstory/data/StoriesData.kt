@@ -2,7 +2,7 @@ package com.dicoding.lullabiesstory.data
 
 import com.travelee.lullabies.R
 
-object StoriesData {
+object StoriesData{
     fun getStoriesList(): List<StoriesModel> {
         return listOf(
             StoriesModel(

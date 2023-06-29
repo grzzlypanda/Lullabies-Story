@@ -5,13 +5,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.lullabiesstory.activities.DetailActivity
+import com.dicoding.lullabiesstory.data.StoriesData
+import com.travelee.lullabies.databinding.StoriesItemBinding
 
-class StoriesAdapter (private val storiesList: List<Stories>) :
+class StoriesAdapter (private val storiesList: List<StoriesData>) :
     RecyclerView.Adapter<StoriesAdapter.ListViewHolder>() {
     //Assign Data
     class ListViewHolder(private val binding: StoriesItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(stories: Stories) {
+        fun bind(stories: StoriesData) {
             with(binding) {
                 Glide
                     .with(itemView.context)
