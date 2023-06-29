@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        app:shapeAppearanceOverlay="@style/roundImageView"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_image"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/title" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        style="@style/body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/text"
+        android:text="@string/author"  />
+
+    <TextView
+        android:id="@+id/tv_readingtime"
+        style="@style/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_image"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_marginStart="8dp"
+        android:text="@string/readingtime"  />
+
+    <ImageView
+        android:id="@+id/iv_rating"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="-28dp"
+        android:layout_toStartOf="@id/tv_author"
+        android:src="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        style="@style/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="-62dp"
+        android:layout_toStartOf="@id/tv_author"
+        android:text="@string/rating" />
+
+</RelativeLayout>

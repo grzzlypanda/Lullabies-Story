@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Lullabies Story</string>
+    <string name="app_name">My Lullabies</string>
+    <string name="title">The Enchanted Pen</string>
+    <string name="author">Hassan Ali</string>
+    <string name="releaseDate">June 17, 2023</string>
+    <string name="rating">4.7</string>
+    <string name="rate">Ratings</string>
+    <string name="genre">Genre :</string>
+    <string name="readingtimetittle">Reading Time</string>
+    <string name="genres">Fantasy/Imagination</string>
+    <string name="readingtime">8 Minutes Read</string>
+    <string name="contenttitle">Contents</string>
+    <string name="content">In a small village nestled amidst lush green fields, there lived a young boy named Omar. Omar had always possessed a vivid imagination and an extraordinary talent for storytelling.
+        He believed that words held a magical power, capable of transporting people to enchanting realms. </string>
+    <string name="share">S H A R E</string>
+    <string name="menu_profile">Profile</string>
+    <string name="nama_profile">Ari Rachman</string>
+    <string name="email_profile">ari.rachmanhakiem@gmail.com</string>
 </resources>
