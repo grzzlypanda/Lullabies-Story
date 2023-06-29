@@ -4,8 +4,10 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.dicoding.lullabiesstory.activities.DetailActivity
 import com.dicoding.lullabiesstory.data.StoriesData
+import com.travelee.lullabies.R
 import com.travelee.lullabies.databinding.StoriesItemBinding
 
 class StoriesAdapter (private val storiesList: List<StoriesData>) :
